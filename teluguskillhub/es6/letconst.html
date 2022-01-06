@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      {
+        var data = 10;
+        console.log(data);
+      }
+      console.log(data);
+
+      //   let is block scoped
+      {
+        let data1 = 20;
+        console.log(data1);
+        data1 = "hai";
+        console.log(data1);
+      }
+      //   console.log(data1);
+
+      //   const also block scoped
+      {
+        const data2 = 100;
+        console.log(data2);
+        // error - Assignment to constant variable is not possible
+        // data2 = "hello";
+        // console.log(data2);
+
+        //error - in the same block scope re-declaring also not possible
+        //     const data2 = "hello";
+        //   console.log(data2);
+      }
+      //   but after block it is possible
+      const data2 = "hello";
+      console.log(data2);
+      //   console.log(data2);
+    </script>
+  </body>
+</html>
