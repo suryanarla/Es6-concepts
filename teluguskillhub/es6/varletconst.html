@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // var
+      var number = 10;
+      console.log(number);
+      //   updating
+      number = 20;
+      console.log(number);
+      //   redefine
+      var number = "surya";
+      console.log(number);
+
+      //   let
+
+      let amount = 100;
+      console.log(amount);
+      //   updating
+      amount = 200;
+      console.log(amount);
+      //   redefine - it will throw error
+      //   error - Identifier 'amount' has already been declared
+      //   let amount = "venkat";
+      //   console.log(amount);
+
+      //   const
+      const total = 1000;
+      console.log(total);
+      //   update - error Assignment to constant variable. is not possible
+      //   total = 2000;
+      //   console.log(total);
+      //   redefine,redeclare is not possible in const
+      //   const total = 3000;
+      //   console.log(total);
+
+      const person = {
+        name: "surya",
+        id: 535,
+      };
+      console.log(person.name);
+      person.name = "venkat";
+      console.log(person.name);
+    </script>
+  </body>
+</html>
